@@ -12,4 +12,4 @@ Prank Bot does not store any personal data. Temporary data may be processed to p
 We are not liable for any damages caused by the use of this bot. Use it at your own risk.
 
 4. Contact
-If you have any questions, please contact us at mhmxdmmm@gmail.com.
+If you have any questions, please contact us at peakmic.com@gmail.com.
