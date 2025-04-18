@@ -1,22 +1,164 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service</title>
+    <title>Peak Mic - Terms of Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        /* Style for numbered list sections */
+        main section h2::before {
+            counter-increment: section-counter;
+            content: counter(section-counter) ". ";
+            font-weight: bold;
+            margin-right: 0.25em;
+        }
+        body {
+            counter-reset: section-counter;
+        }
+    </style>
 </head>
-<body>
-    <h1>Terms of Service for Peakmic Bot</h1>
-    <p>Welcome to PeakMic Bot, the best quality music bot for Discord. By using this bot, you agree to comply with the following terms.</p>
+<body class="bg-gradient-to-br from-slate-900 to-slate-800 text-gray-200 leading-relaxed">
 
-    <h2>1. User Guidelines</h2>
-    <p>You must be at least 13 years old to use Peak Mic Bot. You agree to follow Discord’s Terms of Service and ensure legal use of the bot.</p>
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
 
-    <h2>2. Data Collection</h2>
-    <p>Peak Mic Bot does not store any personal data. Temporary data may be processed to provide the bot’s functionality.</p>
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">
+                Peak Mic <span class="text-cyan-400">Terms of Service</span>
+            </h1>
+            <p class="text-lg text-gray-400">Please read these terms carefully before use.</p>
+            <p class="text-sm text-gray-500 mt-4">Last Updated: <span id="lastUpdated">April 11, 2025</span></p> </header>
 
-    <h2>3. Contact</h2>
-    <p>If you have any questions, please contact us at <a href="mailto:peakmic.com@gmail.com">peakmic.com@gmail.com</a>.</p>
+        <main class="bg-slate-800/50 backdrop-blur-sm p-6 md:p-10 rounded-xl shadow-xl border border-slate-700">
+
+            <p class="mb-6 text-lg">
+                Welcome to Peak Mic! By using our Discord bot ("Bot"), you agree to comply with and be bound by the following terms and conditions of use ("Terms", "TOS").
+            </p>
+
+            <section class="mb-6">
+                <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Acceptance of Terms</h2>
+                <p>
+                    By inviting and using Peak Mic on your Discord server, you signify your agreement to these Terms of Service. If you do not agree with any part of these terms, you should not use the Bot.
+                </p>
+            </section>
+
+            <section class="mb-6">
+                <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Bot Functionality</h2>
+                <p class="mb-3">
+                    Peak Mic is a music bot designed to allow users to search for and play music within a Discord server environment. Proper functioning requires certain Discord permissions and intents:
+                </p>
+                <ul class="list-disc list-inside space-y-1 pl-4 text-gray-300">
+                    <li><strong class="text-white">Server Member Intent:</strong> Necessary to provide accurate functionality related to server members, such as managing member-specific commands and interactions.</li>
+                    <li><strong class="text-white">Message Content Intent:</strong> Required to read messages for processing music commands and optionally delete commands after processing to maintain chat cleanliness.</li>
+                </ul>
+            </section>
+
+            <section class="mb-6">
+                <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Permissions Required</h2>
+                 <p class="mb-3">
+                     Peak Mic requires the following standard Discord permissions granted by a server administrator to operate effectively:
+                 </p>
+                 <ul class="list-disc list-inside space-y-1 pl-4 text-gray-300">
+                     <li><strong class="text-white">Read Messages / View Channels:</strong> To detect commands directed at the Bot.</li>
+                     <li><strong class="text-white">Send Messages:</strong> To provide feedback, playback information, and respond to users.</li>
+                     <li><strong class="text-white">Manage Messages:</strong> Optionally used to delete processed music commands for chat tidiness.</li>
+                     <li><strong class="text-white">Connect:</strong> To join voice channels for music playback.</li>
+                     <li><strong class="text-white">Speak:</strong> To stream audio (play music) in voice channels.</li>
+                 </ul>
+            </section>
+
+            <section class="mb-6">
+                 <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Privacy and Data Usage</h2>
+                <p>
+                    Peak Mic respects your privacy. The Bot collects and uses data only as necessary to provide its services, primarily involving reading message content to process commands and handling server member data (like User IDs) for core functionality. No personal data is shared with unrelated third parties. All collected data is used solely for operating Peak Mic. For detailed information, please refer to our <a href="privacy.html" class="text-blue-400 hover:text-blue-300 hover:underline">Privacy Policy</a>.
+                </p>
+                <p class="text-sm text-gray-400 italic mt-2">
+                    (Make sure the link 'privacy.html' points to your actual Privacy Policy file/page.)
+                </p>
+            </section>
+
+            <section class="mb-6">
+                 <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">User Responsibilities</h2>
+                <p class="mb-3">
+                    As a user of Peak Mic, you agree to the following:
+                </p>
+                 <ul class="list-disc list-inside space-y-1 pl-4 text-gray-300">
+                    <li>Use Peak Mic in strict compliance with <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 hover:underline">Discord's Terms of Service</a> and <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 hover:underline">Community Guidelines</a>.</li>
+                    <li>Refrain from using the Bot for any illegal, unauthorized, or harmful purposes.</li>
+                    <li>Do not abuse or misuse the Bot's features. This includes, but is not limited to, spamming commands, attempting to exploit vulnerabilities, or disrupting the service for others.</li>
+                 </ul>
+            </section>
+
+            <section class="mb-6">
+                 <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Termination</h2>
+                <p>
+                    We reserve the right to terminate or restrict your access to Peak Mic at any time, without prior notice or liability, for any reason whatsoever, including without limitation if you breach these Terms, violate Discord's terms, or engage in conduct deemed harmful or unlawful.
+                </p>
+            </section>
+
+            <section class="mb-6">
+                 <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Disclaimer of Warranties</h2>
+                <p>
+                    Peak Mic is provided on an "AS IS" and "AS AVAILABLE" basis. We make no representation or warranty that the Bot will be error-free, uninterrupted, secure, or meet your specific requirements. To the fullest extent permitted by applicable law, we expressly disclaim all warranties, whether express, implied, statutory, or otherwise, including but not limited to implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement.
+                </p>
+            </section>
+
+            <section class="mb-6">
+                 <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Limitation of Liability</h2>
+                <p>
+                    In no event shall Peak Mic or its developers be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (a) your access to or use of or inability to access or use the Bot; (b) any conduct or content of any third party on the Service; (c) any content obtained from the Service; and (d) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
+                </p>
+            </section>
+
+            <section class="mb-6">
+                 <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Changes to the Terms</h2>
+                <p>
+                    We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will try to provide notice prior to any new terms taking effect, though this is not guaranteed. Changes will be effective immediately upon posting the updated terms (e.g., by updating the "Last Updated" date). Your continued use of Peak Mic after any such changes constitutes your acceptance of the new Terms.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Contact Information</h2>
+                <p class="mb-3">
+                    If you have any questions or concerns about these Terms of Service, please contact us:
+                </p>
+                 <ul class="list-none space-y-2 pl-4 text-gray-300">
+                     <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-2 text-cyan-400 align-middle" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        Email: <a href="mailto:newpavenp@gmail.com" class="text-blue-400 hover:text-blue-300 hover:underline">newpavenp@gmail.com</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-2 text-cyan-400 align-middle" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                        </svg>
+                         Discord: Join our support server <a href="https://discord.gg/ypqQaEjAKr" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 hover:underline">https://discord.gg/ypqQaEjAKr</a> or contact <span class="text-white font-medium">gwpx7pavitra</span>.
+                    </li>
+                 </ul>
+            </section>
+
+             <p class="mt-8 border-t border-slate-700 pt-6 text-center text-gray-400">
+                By using Peak Mic, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
+            </p>
+
+        </main>
+
+        <footer class="text-center mt-10 text-sm text-gray-500">
+            <p>&copy; <span id="currentYear"></span> Peak Mic Team. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
 </body>
 </html>
