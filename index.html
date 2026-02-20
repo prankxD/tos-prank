@@ -1,114 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peak Mic - Terms of Service</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peak Mic - Terms of Service</title>
+<script src="https://cdn.tailwindcss.com"></script>
 
-        /* Style for numbered list sections */
-        main section h2::before {
-            counter-increment: section-counter;
-            content: counter(section-counter) ". ";
-            font-weight: bold;
-            margin-right: 0.25em;
-        }
-        body {
-            counter-reset: section-counter;
-        }
-    </style>
+<style>
+body{
+font-family:'Inter',sans-serif;
+counter-reset:section-counter;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+main section h2::before{
+counter-increment:section-counter;
+content:counter(section-counter) ". ";
+font-weight:bold;
+margin-right:.25em;
+}
+</style>
 </head>
-<body class="bg-gradient-to-br from-slate-900 to-slate-800 text-gray-200 leading-relaxed">
 
-    <div class="container mx-auto px-4 py-12 max-w-4xl">
+<body class="bg-gradient-to-br from-slate-900 to-slate-800 text-gray-200">
 
-        <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">
-                Peak Mic <span class="text-cyan-400">Terms of Service</span>
-            </h1>
-            <p class="text-lg text-gray-400">Please read these terms carefully before use.</p>
-            <p class="text-sm text-gray-500 mt-4">Last Updated: <span id="lastUpdated">April 11, 2025</span></p> </header>
+<div class="container mx-auto px-4 py-12 max-w-4xl">
 
-        <main class="bg-slate-800/50 backdrop-blur-sm p-6 md:p-10 rounded-xl shadow-xl border border-slate-700">
+<header class="text-center mb-12">
+<h1 class="text-4xl md:text-5xl font-bold text-white mb-2">
+Peak Mic <span class="text-cyan-400">Terms of Service</span>
+</h1>
+<p class="text-lg text-gray-400">Multi-Purpose Discord Bot</p>
+<p class="text-sm text-gray-500 mt-4">
+Last Updated: February 21, 2026
+</p>
+</header>
 
-            <p class="mb-6 text-lg">
-                Welcome to Peak Mic! By using our Discord bot ("Bot"), you agree to comply with and be bound by the following terms and conditions of use ("Terms", "TOS").
-            </p>
+<main class="bg-slate-800/50 p-6 md:p-10 rounded-xl shadow-xl border border-slate-700">
 
-            <section class="mb-6">
-                <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Acceptance of Terms</h2>
-                <p>
-                    By inviting and using Peak Mic on your Discord server, you signify your agreement to these Terms of Service. If you do not agree with any part of these terms, you should not use the Bot.
-                </p>
-            </section>
+<p class="mb-6 text-lg">
+Peak Mic is a multi-purpose Discord bot designed to provide moderation,
+automoderation, music playback, logging, and server management tools.
+By inviting or using Peak Mic, you agree to these Terms of Service.
+</p>
 
-            <section class="mb-6">
-                <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Bot Functionality</h2>
-                <p class="mb-3">
-                    Peak Mic is a music bot designed to allow users to search for and play music within a Discord server environment. Proper functioning requires certain Discord permissions and intents:
-                </p>
-                <ul class="list-disc list-inside space-y-1 pl-4 text-gray-300">
-                    <li><strong class="text-white">Server Member Intent:</strong> Necessary to provide accurate functionality related to server members, such as managing member-specific commands and interactions.</li>
-                    <li><strong class="text-white">Message Content Intent:</strong> Required to read messages for processing music commands and optionally delete commands after processing to maintain chat cleanliness.</li>
-                </ul>
-            </section>
+<section class="mb-6">
+<h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">
+Bot Functionality
+</h2>
+Peak Mic provides:
+<ul class="list-disc list-inside pl-4 space-y-1">
+<li>Moderation & Automoderation</li>
+<li>Music Playback</li>
+<li>Server Logging</li>
+<li>Role Management</li>
+<li>Channel Management</li>
+<li>Anti-Spam & Anti-Raid Systems</li>
+<li>Custom Server Configuration</li>
+</ul>
+</section>
 
-            <section class="mb-6">
-                <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Permissions Required</h2>
-                 <p class="mb-3">
-                     Peak Mic requires the following standard Discord permissions granted by a server administrator to operate effectively:
-                 </p>
-                 <ul class="list-disc list-inside space-y-1 pl-4 text-gray-300">
-                     <li><strong class="text-white">Read Messages / View Channels:</strong> To detect commands directed at the Bot.</li>
-                     <li><strong class="text-white">Send Messages:</strong> To provide feedback, playback information, and respond to users.</li>
-                     <li><strong class="text-white">Manage Messages:</strong> Optionally used to delete processed music commands for chat tidiness.</li>
-                     <li><strong class="text-white">Connect:</strong> To join voice channels for music playback.</li>
-                     <li><strong class="text-white">Speak:</strong> To stream audio (play music) in voice channels.</li>
-                 </ul>
-            </section>
+<section class="mb-6">
+<h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">
+Administrator Permission Requirement
+</h2>
 
-            <section class="mb-6">
-                 <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Privacy and Data Usage</h2>
-                <p>
-                    Peak Mic respects your privacy. The Bot collects and uses data only as necessary to provide its services, primarily involving reading message content to process commands and handling server member data (like User IDs) for core functionality. No personal data is shared with unrelated third parties. All collected data is used solely for operating Peak Mic. For detailed information, please refer to our <a href="privacy.html" class="text-blue-400 hover:text-blue-300 hover:underline">Privacy Policy</a>.
-                </p>
-                <p class="text-sm text-gray-400 italic mt-2">
-                    (Make sure the link 'privacy.html' points to your actual Privacy Policy file/page.)
-                </p>
-            </section>
+Peak Mic may request <strong>Administrator Permission</strong> to ensure
+that moderation and automoderation systems function correctly.
 
-            <section class="mb-6">
-                 <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">User Responsibilities</h2>
-                <p class="mb-3">
-                    As a user of Peak Mic, you agree to the following:
-                </p>
-                 <ul class="list-disc list-inside space-y-1 pl-4 text-gray-300">
-                    <li>Use Peak Mic in strict compliance with <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 hover:underline">Discord's Terms of Service</a> and <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 hover:underline">Community Guidelines</a>.</li>
-                    <li>Refrain from using the Bot for any illegal, unauthorized, or harmful purposes.</li>
-                    <li>Do not abuse or misuse the Bot's features. This includes, but is not limited to, spamming commands, attempting to exploit vulnerabilities, or disrupting the service for others.</li>
-                 </ul>
-            </section>
+Administrator permission is required for:
 
-            <section class="mb-6">
-                 <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Termination</h2>
-                <p>
-                    We reserve the right to terminate or restrict your access to Peak Mic at any time, without prior notice or liability, for any reason whatsoever, including without limitation if you breach these Terms, violate Discord's terms, or engage in conduct deemed harmful or unlawful.
-                </p>
-            </section>
+<ul class="list-disc list-inside pl-4 space-y-1">
+<li>Automoderation enforcement</li>
+<li>Role assignment/removal</li>
+<li>Timeout / mute system</li>
+<li>Channel lockdown system</li>
+<li>Anti-Raid protection</li>
+<li>Message filtering & spam control</li>
+<li>Logging moderation actions</li>
+</ul>
 
-            <section class="mb-6">
-                 <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Disclaimer of Warranties</h2>
-                <p>
-                    Peak Mic is provided on an "AS IS" and "AS AVAILABLE" basis. We make no representation or warranty that the Bot will be error-free, uninterrupted, secure, or meet your specific requirements. To the fullest extent permitted by applicable law, we expressly disclaim all warranties, whether express, implied, statutory, or otherwise, including but not limited to implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement.
-                </p>
-            </section>
+Peak Mic will <strong>never perform destructive actions</strong>
+such as deleting channels, roles, or kicking members
+without an explicit moderation command from an authorized server administrator.
 
-            <section class="mb-6">
+Administrator permission is recommended but optional.
+Server owners may grant individual permissions manually if preferred.
+</section>
+
+<section class="mb-6">
+<h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">
+Permissions Required
+</h2>
+
+Peak Mic may require:
+
+<ul class="list-disc list-inside pl-4 space-y-1">
+<li>View Channels</li>
+<li>Send Messages</li>
+<li>Manage Messages</li>
+<li>Manage Roles</li>
+<li>Manage Channels</li>
+<li>Connect & Speak (Music)</li>
+<li>Read Message History</li>
+<li>Use Voice Activity</li>
+</ul>
+
+Permissions are used strictly for:
+Moderation, logging, automoderation, and music functionality.
+</section>
+
+<section class="mb-6">
+<h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">
+Privacy & Data Usage
+</h2>
+
+Peak Mic may store:
+
+<ul class="list-disc list-inside pl-4 space-y-1">
+<li>Server ID</li>
+<li>User ID</li>
+<li>Role ID</li>
+<li>Channel ID</li>
+<li>Moderation logs</li>
+<li>Automod settings</li>
+</ul>
+
+Peak Mic does NOT store:
+
+<ul class="list-disc list-inside pl-4 space-y-1">
+<li>Email addresses</li>
+<li>Passwords</li>
+<li>IP addresses</li>
+<li>Private user data</li>
+</ul>
+
+Stored data is used only for bot functionality and is never sold or shared.
+</section>
+
+<section class="mb-6">
+<h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">
+User Responsibilities
+</h2>
+Users must:
+<ul class="list-disc list-inside pl-4 space-y-1">
+<li>Follow Discord Terms of Service</li>
+<li>Not misuse moderation commands</li>
+<li>Not exploit bot vulnerabilities</li>
+<li>Not use the bot for illegal activities</li>
+</ul>
+</section>
+
+<section class="mb-6">
+<h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">
+Service Availability
+</h2>
+Peak Mic is provided "AS IS" without uptime guarantee.
+Services may be updated or temporarily disabled for maintenance.
+</section>
+
+<section class="mb-6">
+<h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">
+Termination
+</h2>
+We reserve the right to restrict or remove access
+to any server misusing Peak Mic.
+</section>
+
+<section>
+<h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">
+Contact Information
+</h2>
+
+Email:
+<a href="mailto:newpavenp@gmail.com"
+class="text-blue-400 hover:underline">
+newpavenp@gmail.com
+</a>
+
+<br><br>
+
+Support Server:
+<a href="https://discord.gg/ypqQaEjAKr"
+target="_blank"
+class="text-blue-400 hover:underline">
+https://discord.gg/ypqQaEjAKr
+</a>
+</section>
+
+<p class="mt-8 border-t border-slate-700 pt-6 text-center text-gray-400">
+By using Peak Mic, you agree to these Terms.
+</p>
+
+</main>
+
+<footer class="text-center mt-10 text-sm text-gray-500">
+<p>&copy; <span id="year"></span> Peak Mic</p>
+</footer>
+
+</div>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+
+</body>
+</html>            <section class="mb-6">
                  <h2 class="text-2xl font-semibold text-cyan-300 border-l-4 border-cyan-400 pl-3 mb-3">Limitation of Liability</h2>
                 <p>
                     In no event shall Peak Mic or its developers be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (a) your access to or use of or inability to access or use the Bot; (b) any conduct or content of any third party on the Service; (c) any content obtained from the Service; and (d) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
